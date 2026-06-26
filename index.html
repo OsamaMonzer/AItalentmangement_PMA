@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Technova AI Recruitment System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">⚡ Technova <span>AI Recruitment</span></div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Dashboard</a>
+      <a href="candidate.html">Candidate Profile</a>
+    </div>
+    <div class="nav-user">HR Manager ▾</div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <div>
+      <h1>Recruiter Dashboard</h1>
+      <p>Job Opening: <strong>Frontend Developer</strong> &nbsp;|&nbsp; Total Applicants: <strong>42</strong></p>
+    </div>
+    <button class="btn-primary">+ Post New Job</button>
+  </div>
+
+  <!-- STATS CARDS -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-num">42</div>
+      <div class="stat-label">Total Applicants</div>
+    </div>
+    <div class="stat-card green">
+      <div class="stat-num">18</div>
+      <div class="stat-label">AI Shortlisted</div>
+    </div>
+    <div class="stat-card yellow">
+      <div class="stat-num">7</div>
+      <div class="stat-label">Manual Review</div>
+    </div>
+    <div class="stat-card red">
+      <div class="stat-num">17</div>
+      <div class="stat-label">Rejected</div>
+    </div>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filters-bar">
+    <span class="filter-label">Filters:</span>
+    <select><option>All Skills</option><option>React</option><option>Python</option><option>JavaScript</option></select>
+    <select><option>All Education</option><option>Bachelor's</option><option>Master's</option><option>Diploma</option></select>
+    <select><option>All Experience</option><option>0-2 years</option><option>3-5 years</option><option>5+ years</option></select>
+    <select><option>All Locations</option><option>Kuala Lumpur</option><option>Selangor</option><option>Remote</option></select>
+    <button class="btn-filter">Apply</button>
+  </div>
+
+  <!-- CANDIDATES TABLE -->
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Candidate</th>
+          <th>Skills</th>
+          <th>Experience</th>
+          <th>Match Score</th>
+          <th>Status</th>
+          <th>Flags</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><a href="candidate.html" class="candidate-link">Aisha Rahman</a></td>
+          <td>React, JS, CSS</td>
+          <td>3 years</td>
+          <td><span class="score high">96%</span></td>
+          <td><span class="badge shortlist">Shortlist</span></td>
+          <td>—</td>
+          <td><a href="candidate.html" class="btn-view">View</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Daniel Tan</td>
+          <td>Vue, JS, HTML</td>
+          <td>4 years</td>
+          <td><span class="score high">91%</span></td>
+          <td><span class="badge shortlist">Shortlist</span></td>
+          <td>—</td>
+          <td><a href="candidate.html" class="btn-view">View</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Sarah Lee</td>
+          <td>React, TypeScript</td>
+          <td>2 years</td>
+          <td><span class="score medium">87%</span></td>
+          <td><span class="badge review">Review</span></td>
+          <td><span class="flag">⚠ Low Exp</span></td>
+          <td><a href="candidate.html" class="btn-view">View</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Ahmad Yusof</td>
+          <td>Angular, CSS</td>
+          <td>1 year</td>
+          <td><span class="score medium">74%</span></td>
+          <td><span class="badge review">Review</span></td>
+          <td><span class="flag bias">⚠ Bias Flag</span></td>
+          <td><a href="candidate.html" class="btn-view">View</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Nurul Huda</td>
+          <td>HTML, CSS</td>
+          <td>1 year</td>
+          <td><span class="score low">58%</span></td>
+          <td><span class="badge reject">Rejected</span></td>
+          <td><span class="flag">⚠ Missing Portfolio</span></td>
+          <td><a href="candidate.html" class="btn-view">View</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

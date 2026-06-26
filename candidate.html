@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Candidate Profile - Aisha Rahman</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">⚡ Technova <span>AI Recruitment</span></div>
+    <div class="nav-links">
+      <a href="index.html">Dashboard</a>
+      <a href="candidate.html" class="active">Candidate Profile</a>
+    </div>
+    <div class="nav-user">HR Manager ▾</div>
+  </nav>
+
+  <!-- BACK -->
+  <div class="page-header">
+    <div>
+      <a href="index.html" class="back-link">← Back to Dashboard</a>
+      <h1>Candidate Profile</h1>
+      <p>Applying for: <strong>Frontend Developer</strong></p>
+    </div>
+    <span class="score-hero">Match Score: <strong>96%</strong></span>
+  </div>
+
+  <div class="profile-grid">
+
+    <!-- LEFT COLUMN -->
+    <div class="profile-left">
+
+      <div class="card">
+        <div class="card-title">👤 Candidate Summary</div>
+        <div class="profile-avatar">AR</div>
+        <div class="profile-name">Aisha Rahman</div>
+        <div class="profile-meta">📍 Kuala Lumpur, Malaysia</div>
+        <div class="profile-meta">🎓 BSc Computer Science, UTM</div>
+        <div class="profile-meta">💼 3 Years Experience</div>
+        <div class="profile-meta">📧 aisha.rahman@email.com</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">🛠 Extracted Skills</div>
+        <div class="skills-wrap">
+          <span class="skill-tag match">React ✓</span>
+          <span class="skill-tag match">JavaScript ✓</span>
+          <span class="skill-tag match">CSS ✓</span>
+          <span class="skill-tag match">REST APIs ✓</span>
+          <span class="skill-tag match">Git ✓</span>
+          <span class="skill-tag partial">TypeScript ~</span>
+          <span class="skill-tag missing">Node.js ✗</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="profile-right">
+
+      <div class="card">
+        <div class="card-title">🤖 AI Match Score & Explanation</div>
+        <div class="score-bar-wrap">
+          <div class="score-bar-label">Overall Match</div>
+          <div class="score-bar-track"><div class="score-bar-fill" style="width:96%">96%</div></div>
+        </div>
+        <div class="score-bar-wrap">
+          <div class="score-bar-label">Skills Match</div>
+          <div class="score-bar-track"><div class="score-bar-fill green" style="width:98%">98%</div></div>
+        </div>
+        <div class="score-bar-wrap">
+          <div class="score-bar-label">Experience Match</div>
+          <div class="score-bar-track"><div class="score-bar-fill yellow" style="width:85%">85%</div></div>
+        </div>
+        <div class="score-bar-wrap">
+          <div class="score-bar-label">Education Match</div>
+          <div class="score-bar-track"><div class="score-bar-fill" style="width:100%">100%</div></div>
+        </div>
+        <div class="ai-explanation">
+          <strong>Why this score?</strong><br/>
+          Candidate demonstrates strong frontend proficiency in React and JavaScript, which are core requirements for this role. Education level and degree are a direct match. Experience of 3 years meets the minimum threshold. Minor gap in TypeScript proficiency and no Node.js experience noted.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">⚠ Missing Qualifications</div>
+        <ul class="missing-list">
+          <li>Node.js — required for backend integration tasks</li>
+          <li>TypeScript — partial knowledge, further assessment needed</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">📝 Recruiter Notes & Decision</div>
+        <textarea class="notes-input" placeholder="Add your notes here...">Strong portfolio. Highly recommended for technical interview round.</textarea>
+        <div class="decision-btns">
+          <button class="btn-primary" onclick="decide('shortlist')">✓ Shortlist</button>
+          <button class="btn-review" onclick="decide('review')">↩ Manual Review</button>
+          <button class="btn-reject" onclick="decide('reject')">✗ Reject</button>
+        </div>
+        <div id="decision-msg" class="decision-msg"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
